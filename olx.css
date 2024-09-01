@@ -77,6 +77,8 @@ height: 100%;
     margin-left: 2vw;
     border-style: solid;
     border-color: black;
+    padding-left: 1%;
+    font-size: 1.2vw;
 }
 #logo2{
     width: 3%;
@@ -91,10 +93,13 @@ height: 100%;
     margin-left: 1%;
     border-style: solid;
     border-color: black;
+    padding-left: 1%;
+    font-size: 1.2vw;
 }
 ::placeholder{
     font-size: 1.2vw;
-    padding-left: 3%;
+    /* padding-left: 3%; */
+    /* line-height: 1; */
 }
 #search{
     width: 4%;
@@ -554,15 +559,16 @@ height: 100%;
 .icon{
     border-radius: 25px;
     border: 0.15vw solid #406367;
-    color: #406367;
     width: 1.5vw;
     height: 1.5vw;
     margin-right: 0.5vw;
     text-align: center;
-    /* overflow: hidden; */
 }
 .icon i{
     font-size: 0.8vw;
+    color: #406367;
+    display: block;
+    padding-top: 20%;
 }
 .buttons{
     /* display: flex; */
@@ -590,27 +596,36 @@ height: 100%;
 }
 #info{
     width: 100%;
-    height: 10vw;
-}
-#info1{
+    height: 4vw;
+    display: flex;
     background-color: #002F34;
-    width: 100%;
-    height: 45%;
-    padding-top: 1.5%;
+}
+#info1, #info2{
+    background-color: #002F34;
+    width: 85%;
+    height: 100%;
+    padding-top: 1.5vw;
 }
 #info2{
+    /* background-color: red; */
+    width: 15%;
+}
+#info3{
     background-color: #EBEEEF;
     width: 100%;
-    height: 55%;
+    height: 6vw;
 }
-#info1 #text3, #info1 #text4{
+#info1 #text3, #info2 #text4{
     color: white;
-    margin-left: 72%;
+    /* margin-left: 72%; */
     font-size: 1vw;
+    float: right;
+    font-weight: bold;
 }
-#info1 #text4{
+#info2 #text4{
     font-weight: lighter;
-    margin-left: 1%;
+    margin-left: 5%;
+    float: left;
 }
 #saif{
     text-align: center;
@@ -618,7 +633,6 @@ height: 100%;
     padding-top: 1.5%;
     font-size: 2vw;
 }
-
 #back-to-top {
     position: fixed;
     background-color: #FFFFFF;
